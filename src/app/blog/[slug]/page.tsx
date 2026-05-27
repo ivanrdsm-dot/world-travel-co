@@ -12,7 +12,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const p = getPost(slug);
   if (!p) return {};
-  return { title: p.title, description: p.excerpt };
+  const ogTitle = encodeURIComponent(p.title);
+  return {
+    title: p.title,
+    description: p.excerpt,
+    openGraph: {
+      title: p.title,
+      description: p.excerpt,
+      images: [`/api/og?title=${ogTitle}&eyebrow=Diario+WTC+%C2%B7+${encodeURIComponent(p.category)}&accent=ink`]
+    }
+  };
 }
 
 export default async function BlogDetail({ params }: { params: Promise<{ slug: string }> }) {

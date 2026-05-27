@@ -5,7 +5,11 @@ import { Trophy, MapPin, Users, Calendar, MessageCircle, Sparkles } from "lucide
 
 export const metadata = {
   title: "Mundial FIFA 26™ · Hospitality oficial",
-  description: "Hospitality oficial del Mundial 2026 en las 16 sedes. Trophy Lounge, Pitch View, Champions Club y Match Club. Inauguración 11 jun, Final 19 jul."
+  description: "Hospitality oficial del Mundial 2026 en las 16 sedes. Trophy Lounge, Pitch View, Champions Club y Match Club. Inauguración 11 jun, Final 19 jul.",
+  openGraph: {
+    title: "Mundial FIFA 26™ Hospitality",
+    images: ["/api/og?title=Mundial+FIFA+26%E2%84%A2&eyebrow=Hospitality+oficial+%C2%B7+16+sedes&accent=ink"]
+  }
 };
 
 const countryOrder = ["México", "Estados Unidos", "Canadá"] as const;

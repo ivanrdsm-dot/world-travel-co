@@ -5,7 +5,11 @@ import { Calendar, MapPin, MessageCircle, Music, Ticket } from "lucide-react";
 
 export const metadata = {
   title: "Conciertos · Palcos VIP y Hospitality",
-  description: "Rosalía, Karol G, Iron Maiden, Romeo Santos, Mon Laferte y más. Acceso a hospitality oficial OCESA y Zignia Live."
+  description: "Rosalía, Karol G, Iron Maiden, Romeo Santos, Mon Laferte y más. Acceso a hospitality oficial OCESA y Zignia Live.",
+  openGraph: {
+    title: "Palcos VIP & Hospitality",
+    images: ["/api/og?title=Conciertos+2026&eyebrow=Palcos+%C2%B7+Hospitality+%C2%B7+Meet+%26+Greet&accent=ink"]
+  }
 };
 
 const monthOrder = ["mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"] as const;

@@ -6,7 +6,11 @@ import { Check, MapPin, MessageCircle, Star } from "lucide-react";
 
 export const metadata = {
   title: "Hoteles · Alianza Grupo Posadas",
-  description: "Live Aqua, Grand Fiesta Americana, Fiesta Americana y The Explorean con beneficios exclusivos WTC."
+  description: "Live Aqua, Grand Fiesta Americana, Fiesta Americana y The Explorean con beneficios exclusivos WTC.",
+  openGraph: {
+    title: "12 hoteles 5★ con alianza WTC",
+    images: ["/api/og?title=Hoteles+5%E2%98%85&eyebrow=Alianza+Grupo+Posadas"]
+  }
 };
 
 const brandOrder = ["Live Aqua", "Grand Fiesta Americana", "Fiesta Americana", "The Explorean"] as const;

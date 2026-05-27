@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 import WhatsAppFAB from "@/components/site/WhatsAppFAB";
+import Analytics from "@/components/site/Analytics";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -19,20 +20,34 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wtravelcompany.com"),
+  metadataBase: new URL("https://world-travel-co.vercel.app"),
   title: {
-    default: "World Travel Co. · Cruceros, tours y experiencias únicas",
+    default: "World Travel Co. · Concierge 360° de lujo en México",
     template: "%s · World Travel Co."
   },
   description:
-    "Agencia de viajes en México. Cruceros Disney, Royal Caribbean, Celebrity, Norwegian. Tours por Japón, Corea, Italia y Mediterráneo con asesoría personalizada.",
+    "Hoteles 5★, jets privados, cruceros, palcos hospitality, Mundial 2026. El concierge 360° de viajes de lujo en México.",
   openGraph: {
     type: "website",
     title: "World Travel Co.",
-    description: "Cruceros, tours y experiencias únicas. Asesoría personalizada en México.",
-    url: "https://wtravelcompany.com",
+    description: "Hoteles, jets, cruceros, conciertos, Mundial 2026. Una sola agencia.",
+    url: "https://world-travel-co.vercel.app",
     siteName: "World Travel Co.",
-    images: ["/paquetes/japon-samurai.jpg"]
+    locale: "es_MX",
+    images: [{
+      url: "/api/og?title=Concierge%20360%C2%B0%20de%20lujo&eyebrow=World%20Travel%20Co.&accent=ink",
+      width: 1200, height: 630, alt: "World Travel Co."
+    }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "World Travel Co.",
+    description: "Hoteles, jets, cruceros, conciertos, Mundial 2026. Una sola agencia.",
+    images: ["/api/og?title=Concierge%20360%C2%B0%20de%20lujo&eyebrow=World%20Travel%20Co.&accent=ink"]
+  },
+  icons: {
+    icon:      "/icon.png",
+    apple:     "/apple-icon.png"
   }
 };
 
@@ -44,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <WhatsAppFAB />
+        <Analytics />
       </body>
     </html>
   );

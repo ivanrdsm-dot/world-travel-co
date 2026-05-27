@@ -6,7 +6,11 @@ import { Plane, MessageCircle, Clock, Users, Briefcase, Gauge } from "lucide-rea
 
 export const metadata = {
   title: "Jets privados y helicópteros",
-  description: "Renta de jets privados Cessna, Embraer, Bombardier, Gulfstream y helicópteros Bell y Airbus con WTC."
+  description: "Renta de jets privados Cessna, Embraer, Bombardier, Gulfstream y helicópteros Bell y Airbus con WTC.",
+  openGraph: {
+    title: "Jets privados WTC",
+    images: ["/api/og?title=Jets+privados&eyebrow=Donde+quieras+%C2%B7+cuando+decidas&accent=ink"]
+  }
 };
 
 const categoryOrder = [

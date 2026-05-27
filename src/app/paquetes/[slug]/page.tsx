@@ -15,9 +15,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const p = getPackage(slug);
   if (!p) return {};
+  const ogTitle   = encodeURIComponent(`${p.title} · ${p.subtitle}`);
+  const ogEyebrow = encodeURIComponent(`${p.type === "crucero" ? "Crucero" : "Tour"} · ${p.region}`);
   return {
     title: `${p.title} — ${p.subtitle}`,
-    description: p.highlights[0]
+    description: p.highlights[0],
+    openGraph: {
+      title: `${p.title} · ${p.subtitle}`,
+      description: p.highlights[0],
+      images: [`/api/og?title=${ogTitle}&eyebrow=${ogEyebrow}&accent=ink`]
+    }
   };
 }
 

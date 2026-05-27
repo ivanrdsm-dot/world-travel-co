@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { contact } from "@/data/contact";
 import { waLink } from "@/lib/utils";
 import { MessageCircle, Send } from "lucide-react";
 
 const destinos = ["Caribe", "Mediterráneo", "Europa", "Japón", "Corea", "Alaska", "Hawái", "Aún no lo sé"];
 const tipos    = ["Crucero", "Tour cultural", "Luna de miel", "Familia", "Grupo", "Sorpréndeme"];
+
+type Status = "idle" | "sending" | "sent" | "error";
 
 export default function ContactForm() {
   const [data, setData] = useState({
@@ -14,7 +15,8 @@ export default function ContactForm() {
     destino: "Caribe", tipo: "Crucero", personas: "2", mes: "", presupuesto: "",
     mensaje: ""
   });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleWA = () => {
     const lines = [
@@ -29,24 +31,24 @@ export default function ContactForm() {
     window.open(waLink(lines), "_blank");
   };
 
-  const handleEmail = (e: React.FormEvent) => {
+  const handleEmail = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = `Cotización · ${data.tipo} a ${data.destino}`;
-    const body = [
-      `Nombre: ${data.nombre}`,
-      `Email: ${data.email}`,
-      `Tel: ${data.telefono}`,
-      "",
-      `Tipo: ${data.tipo}`,
-      `Destino: ${data.destino}`,
-      `Personas: ${data.personas}`,
-      `Mes: ${data.mes}`,
-      `Presupuesto: ${data.presupuesto}`,
-      "",
-      data.mensaje
-    ].join("\n");
-    window.location.href = `mailto:${contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setSent(true);
+    setStatus("sending");
+    setErrorMsg("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      const body = await res.json();
+      if (!res.ok) throw new Error(body.error ?? "Falló el envío");
+      setStatus("sent");
+      setData(d => ({ ...d, mensaje: "" }));
+    } catch (err: any) {
+      setStatus("error");
+      setErrorMsg(err.message ?? "Error desconocido");
+    }
   };
 
   const update = (k: keyof typeof data) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
@@ -71,18 +73,27 @@ export default function ContactForm() {
       </label>
 
       <div className="mt-7 flex flex-col sm:flex-row gap-3">
-        <button type="button" onClick={handleWA} className="btn-primary flex-1 justify-center">
+        <button type="button" onClick={handleWA}
+                className="btn-primary flex-1 justify-center"
+                disabled={status === "sending"}>
           <MessageCircle className="h-4 w-4" /> Enviar por WhatsApp
         </button>
-        <button type="submit" className="btn-dark flex-1 justify-center">
-          <Send className="h-4 w-4" /> Enviar por email
+        <button type="submit" className="btn-dark flex-1 justify-center"
+                disabled={status === "sending"}>
+          <Send className="h-4 w-4" />
+          {status === "sending" ? "Enviando…" : "Enviar por email"}
         </button>
       </div>
 
-      {sent && (
-        <p className="mt-5 text-sm text-sun-700">
-          ✓ Abrimos tu cliente de correo. Si no se abrió, escríbenos directo a <a href={`mailto:${contact.email}`} className="underline">{contact.email}</a>.
-        </p>
+      {status === "sent" && (
+        <div className="mt-5 rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-sm text-emerald-800">
+          ✓ ¡Listo! Recibimos tu cotización. Te respondemos en menos de 1 hora hábil.
+        </div>
+      )}
+      {status === "error" && (
+        <div className="mt-5 rounded-2xl bg-red-50 border border-red-200 p-4 text-sm text-red-800">
+          Hmm, falló el envío ({errorMsg}). Prueba por WhatsApp arriba 👆
+        </div>
       )}
 
       <p className="text-xs text-ink-500 mt-6">
