@@ -26,7 +26,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.45,
     baggageM3: 1.98,
     hourlyRateUSD: { low: 3800, high: 5200 },
-    cover: "https://images.unsplash.com/photo-1583500178690-f7df0a6ba3f0?w=1600&q=80",
+    cover: "/aircraft/cessna-cj3.jpg",
     highlights: [
       "El light jet más popular para vuelos cortos privados.",
       "Cabina cómoda para 6 pasajeros con baño privado.",
@@ -45,7 +45,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.51,
     baggageM3: 2.43,
     hourlyRateUSD: { low: 4200, high: 5800 },
-    cover: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1600&q=80",
+    cover: "/aircraft/phenom-300.jpg",
     highlights: [
       "El light jet más vendido del mundo durante 10 años consecutivos.",
       "Cabina de stand-up con la tecnología de cockpit más moderna del segmento.",
@@ -64,7 +64,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.75,
     baggageM3: 1.42,
     hourlyRateUSD: { low: 5400, high: 6800 },
-    cover: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=1600&q=80",
+    cover: "/aircraft/hawker-800xp.jpg",
     highlights: [
       "Midsize jet probado con cabina amplia y baño completo.",
       "Excelente costo–desempeño para grupos de 6–8.",
@@ -83,7 +83,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.85,
     baggageM3: 2.40,
     hourlyRateUSD: { low: 6800, high: 9200 },
-    cover: "https://images.unsplash.com/photo-1583500178690-f7df0a6ba3f0?w=1600&q=80",
+    cover: "/aircraft/challenger-350.jpg",
     highlights: [
       "Cabina plana (flat floor) de 28 pies — la más amplia de su categoría.",
       "Sin escalas CDMX–NY o CDMX–LA con 8 pasajeros.",
@@ -102,7 +102,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.88,
     baggageM3: 4.36,
     hourlyRateUSD: { low: 9800, high: 13500 },
-    cover: "https://images.unsplash.com/photo-1605649461784-edc01e0d2c4e?w=1600&q=80",
+    cover: "/aircraft/gulfstream-g450.jpg",
     highlights: [
       "Heavy jet con tres zonas de cabina y cama completa.",
       "Sin escalas CDMX–Madrid o CDMX–Buenos Aires.",
@@ -121,7 +121,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.91,
     baggageM3: 5.10,
     hourlyRateUSD: { low: 14500, high: 19500 },
-    cover: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=1600&q=80",
+    cover: "/aircraft/gulfstream-g650er.jpg",
     highlights: [
       "El jet privado más rápido del mundo (Mach 0.925 máximo).",
       "CDMX → Tokio o CDMX → Sídney sin escalas.",
@@ -140,7 +140,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.30,
     baggageM3: 0.45,
     hourlyRateUSD: { low: 2400, high: 3200 },
-    cover: "https://images.unsplash.com/photo-1583752394023-a8b8e5dcfca0?w=1600&q=80",
+    cover: "/aircraft/bell-407.jpg",
     highlights: [
       "El helicóptero ejecutivo más confiable del mercado.",
       "Configuración VIP de 6 plazas en piel.",
@@ -159,7 +159,7 @@ export const fleet: Aircraft[] = [
     cabinHeightM: 1.30,
     baggageM3: 1.20,
     hourlyRateUSD: { low: 3200, high: 4500 },
-    cover: "https://images.unsplash.com/photo-1583752394023-a8b8e5dcfca0?w=1600&q=80",
+    cover: "/aircraft/airbus-h145.jpg",
     highlights: [
       "Bimotor: el helicóptero más seguro del mercado civil.",
       "Cabina configurable para 8 pasajeros + 2 tripulantes.",

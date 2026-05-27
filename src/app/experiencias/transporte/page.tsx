@@ -50,13 +50,18 @@ export default function TransportePage() {
               <h2 className="font-display text-display-md mb-8">{cat}</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {items.map(v => (
-                  <article key={v.slug} className="card overflow-hidden">
-                    <div className="relative aspect-[4/3]">
-                      <Image src={v.cover} alt={`${v.make} ${v.model}`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink/65 to-transparent" />
+                  <article key={v.slug} className="card overflow-hidden group">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <Image src={v.cover} alt={`${v.make} ${v.model}`} fill
+                             className="object-cover transition-transform duration-700 group-hover:scale-105"
+                             sizes="(max-width: 768px) 100vw, 33vw" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-ink/10" />
                       <div className="absolute bottom-4 left-5 text-white">
-                        <p className="text-[11px] uppercase tracking-widest opacity-80">{v.year} · {v.make}</p>
-                        <h3 className="font-display text-2xl mt-0.5">{v.model}</h3>
+                        <p className="text-[11px] uppercase tracking-[0.22em] font-semibold opacity-90">{v.year} · {v.make}</p>
+                        <h3 className="font-display text-2xl lg:text-3xl mt-1 tracking-tight leading-[1.0]"
+                            style={{ textShadow: "0 2px 18px rgba(0,0,0,0.55)" }}>
+                          {v.model}
+                        </h3>
                       </div>
                     </div>
                     <div className="p-6">

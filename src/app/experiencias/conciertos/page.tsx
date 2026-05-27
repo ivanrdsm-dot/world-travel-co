@@ -59,7 +59,7 @@ export default function ConciertosPage() {
                   <article key={c.slug} className="card overflow-hidden group">
                     <div className="relative aspect-[4/5]">
                       <Image src={c.cover} alt={c.artist} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/30 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/55 to-ink/15" />
                       <div className="absolute top-4 left-4 flex gap-2">
                         <span className="chip bg-white/95 text-ink"><Music className="h-3 w-3" /> {c.category}</span>
                       </div>
@@ -71,9 +71,12 @@ export default function ConciertosPage() {
                         }`}>{c.status}</span>
                       </div>
                       <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                        <h3 className="font-display text-3xl leading-none">{c.artist}</h3>
-                        <p className="mt-2 text-sm flex items-center gap-1.5"><Calendar className="h-3.5 w-3.5" /> {formatDates(c.dates)}</p>
-                        <p className="text-sm flex items-center gap-1.5 mt-1"><MapPin className="h-3.5 w-3.5" /> {c.venue} · {c.city}</p>
+                        <h3 className="font-display text-3xl lg:text-4xl leading-[0.95] tracking-tight"
+                            style={{ textShadow: "0 2px 18px rgba(0,0,0,0.55)" }}>
+                          {c.artist}
+                        </h3>
+                        <p className="mt-3 text-sm flex items-center gap-1.5 opacity-95"><Calendar className="h-3.5 w-3.5" /> {formatDates(c.dates)}</p>
+                        <p className="text-sm flex items-center gap-1.5 mt-1 opacity-95"><MapPin className="h-3.5 w-3.5" /> {c.venue} · {c.city}</p>
                       </div>
                     </div>
 

@@ -27,7 +27,7 @@ export const fleet: Vehicle[] = [
     hourlyRateMXN: 3200,
     dailyRateMXN: 22000,
     airportRateMXN: 4800,
-    cover: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80",
+    cover: "/vehicles/mercedes-s580.jpg",
     highlights: [
       "El estándar mundial del transporte ejecutivo de lujo.",
       "Asientos traseros con función masaje y respaldo reclinable.",
@@ -45,7 +45,7 @@ export const fleet: Vehicle[] = [
     perks: ["Asientos con suspensión activa", "Headliner Starlight", "Champagne cooler"],
     hourlyRateMXN: 7800,
     dailyRateMXN: 58000,
-    cover: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1600&q=80",
+    cover: "/vehicles/rolls-cullinan.jpg",
     highlights: [
       "El SUV más exclusivo del mundo.",
       "Headliner con 1,344 fibras ópticas que simulan un cielo estrellado.",
@@ -64,7 +64,7 @@ export const fleet: Vehicle[] = [
     hourlyRateMXN: 3800,
     dailyRateMXN: 26000,
     airportRateMXN: 5400,
-    cover: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1600&q=80",
+    cover: "/vehicles/range-rover.jpg",
     highlights: [
       "Capacidad off-road real con el lujo de una limusina inglesa.",
       "Cabina trasera con configuración 'Executive Class'.",
@@ -83,7 +83,7 @@ export const fleet: Vehicle[] = [
     hourlyRateMXN: 2800,
     dailyRateMXN: 19500,
     airportRateMXN: 4200,
-    cover: "https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=80",
+    cover: "/vehicles/escalade-esv.jpg",
     highlights: [
       "El SUV ejecutivo americano por excelencia.",
       "Capacidad para 7 pasajeros sin sacrificar equipaje.",
@@ -101,7 +101,7 @@ export const fleet: Vehicle[] = [
     perks: ["Blindaje certificado", "Vidrios opacos", "Chofer escolta certificado", "Comunicación encriptada"],
     hourlyRateMXN: 4500,
     dailyRateMXN: 32000,
-    cover: "https://images.unsplash.com/photo-1581547246434-a8efb78c5e0d?w=1600&q=80",
+    cover: "/vehicles/suburban-blindada.jpg",
     highlights: [
       "Blindaje balístico Nivel VI: protección contra rifles de asalto.",
       "Conductor con curso de manejo evasivo y seguridad privada.",
@@ -120,7 +120,7 @@ export const fleet: Vehicle[] = [
     hourlyRateMXN: 3600,
     dailyRateMXN: 26000,
     airportRateMXN: 6500,
-    cover: "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=1600&q=80",
+    cover: "/vehicles/sprinter-vip.jpg",
     highlights: [
       "Configuración First Class para 12 pasajeros con asientos individuales.",
       "Ideal para tours privados, despedidas de soltera o equipos corporativos.",
@@ -138,7 +138,7 @@ export const fleet: Vehicle[] = [
     perks: ["Bar premium", "Sistema de sonido inmersivo", "Iluminación ambiente", "Champagne incluido"],
     hourlyRateMXN: 4200,
     dailyRateMXN: 28000,
-    cover: "https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?w=1600&q=80",
+    cover: "/vehicles/limo-cadillac.jpg",
     highlights: [
       "Limusina clásica para celebraciones especiales.",
       "Servicio puerta a puerta con chofer en frac.",
@@ -156,7 +156,7 @@ export const fleet: Vehicle[] = [
     perks: ["666 CV Twin-turbo V8", "Modo Strada/Sport/Corsa/Rally", "Conductor instructor opcional"],
     hourlyRateMXN: 8800,
     dailyRateMXN: 72000,
-    cover: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1600&q=80",
+    cover: "/vehicles/lamborghini-urus.jpg",
     highlights: [
       "El Super-SUV más rápido del mundo con 666 caballos.",
       "Renta con chofer-instructor o self-drive con licencia internacional.",

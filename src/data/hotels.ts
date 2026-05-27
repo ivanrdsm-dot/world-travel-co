@@ -33,7 +33,7 @@ export const hotels: Hotel[] = [
     rooms: 371,
     fromPrice: 8400,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80",
+    cover: "/hotels/live-aqua-cancun.jpg",
     amenities: ["All Inclusive Premium", "Spa Feel®", "5 albercas", "Beachfront", "7 restaurantes"],
     highlights: [
       "Adults Only frente al Mar Caribe en la Zona Hotelera de Cancún.",
@@ -54,7 +54,7 @@ export const hotels: Hotel[] = [
     rooms: 602,
     fromPrice: 9200,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1600&q=80",
+    cover: "/hotels/coral-beach-cancun.jpg",
     amenities: ["AAA Five Diamond", "Gem Spa 40,000 sq ft", "Kids Club", "8 restaurantes"],
     highlights: [
       "Único AAA Five Diamond en Cancún por más de 20 años consecutivos.",
@@ -75,7 +75,7 @@ export const hotels: Hotel[] = [
     rooms: 502,
     fromPrice: 6900,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1600&q=80",
+    cover: "/hotels/condesa-cancun.jpg",
     amenities: ["All Inclusive", "5 restaurantes", "Kids Club", "Mini Club", "Domo arquitectónico icónico"],
     highlights: [
       "El icónico hotel del Caribe Mexicano con su domo de palapa más grande del mundo.",
@@ -96,7 +96,7 @@ export const hotels: Hotel[] = [
     rooms: 153,
     fromPrice: 7400,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1600&q=80",
+    cover: "/hotels/san-miguel.jpg",
     amenities: ["Spa Feel®", "Cocina de autor", "Vinoteca", "Terrazas con vista al centro"],
     highlights: [
       "En el corazón patrimonial de San Miguel de Allende.",
@@ -117,7 +117,7 @@ export const hotels: Hotel[] = [
     rooms: 249,
     fromPrice: 11800,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=80",
+    cover: "/hotels/los-cabos.jpg",
     amenities: ["All Inclusive Premium", "Cabo Real Golf Course", "Spa Sōmma", "Frente al Mar de Cortés"],
     highlights: [
       "Frente al Cabo Real Golf Course, uno de los mejores del país.",
@@ -138,7 +138,7 @@ export const hotels: Hotel[] = [
     rooms: 291,
     fromPrice: 5900,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=80",
+    cover: "/hotels/vallarta.jpg",
     amenities: ["All Inclusive", "Spa Gem", "Beachfront Banderas", "Kids Club Coquitos"],
     highlights: [
       "Pioneros del all-inclusive premium en Puerto Vallarta.",
@@ -159,7 +159,7 @@ export const hotels: Hotel[] = [
     rooms: 200,
     fromPrice: 4900,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80",
+    cover: "/hotels/monterrey-valle.jpg",
     amenities: ["Spa Feel®", "Coworking premium", "Rooftop bar", "Steakhouse"],
     highlights: [
       "El hotel urbano más sofisticado de San Pedro Garza García.",
@@ -180,7 +180,7 @@ export const hotels: Hotel[] = [
     rooms: 610,
     fromPrice: 3900,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=80",
+    cover: "/hotels/reforma-cdmx.jpg",
     amenities: ["Sky Lounge piso 28", "Spa Gem", "5 restaurantes", "A 5 min de Polanco"],
     highlights: [
       "Sobre Paseo de la Reforma con vistas al Castillo de Chapultepec.",
@@ -201,7 +201,7 @@ export const hotels: Hotel[] = [
     rooms: 203,
     fromPrice: 5200,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1600&q=80",
+    cover: "/hotels/chapultepec-cdmx.jpg",
     amenities: ["Vista al Bosque de Chapultepec", "Spa Gem", "Concierge personalizado"],
     highlights: [
       "Frente al Bosque de Chapultepec con vistas inigualables.",
@@ -222,7 +222,7 @@ export const hotels: Hotel[] = [
     rooms: 350,
     fromPrice: 3400,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1600&q=80",
+    cover: "/hotels/merida.jpg",
     amenities: ["Spa", "Restaurante regional", "Centro de negocios", "Cerca del centro histórico"],
     highlights: [
       "Punto de partida ideal para explorar Yucatán y Chichén Itzá.",
@@ -243,7 +243,7 @@ export const hotels: Hotel[] = [
     rooms: 56,
     fromPrice: 9800,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=1600&q=80",
+    cover: "/hotels/explorean-cozumel.jpg",
     amenities: ["All Inclusive Aventura", "Excursiones incluidas", "Spa", "Yoga frente al mar"],
     highlights: [
       "Concepto único: All-Inclusive de aventura para adultos.",
@@ -264,7 +264,7 @@ export const hotels: Hotel[] = [
     rooms: 348,
     fromPrice: 12400,
     currency: "MXN",
-    cover: "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1600&q=80",
+    cover: "/hotels/punta-cana.jpg",
     amenities: ["Adults Only", "Spa Feel®", "8 restaurantes", "Premium Adults Beach"],
     highlights: [
       "Adults Only frente a Playa Uvero Alto, una de las más vírgenes de Punta Cana.",

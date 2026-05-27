@@ -27,7 +27,7 @@ export const concerts: Concert[] = [
     status: "Pocas entradas",
     hospitality: ["Palco VIP", "Boletos Premium"],
     fromPriceMXN: 8500,
-    cover: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1600&q=80"
+    cover: "/concerts/mon-laferte-mty.jpg"
   },
   {
     slug: "caifanes-cdmx",
@@ -39,7 +39,7 @@ export const concerts: Concert[] = [
     status: "Pocas entradas",
     hospitality: ["Palco VIP", "Hospitality Lounge"],
     fromPriceMXN: 6800,
-    cover: "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=1600&q=80"
+    cover: "/concerts/caifanes.jpg"
   },
   {
     slug: "mon-laferte-cdmx",
@@ -51,7 +51,7 @@ export const concerts: Concert[] = [
     status: "Sold out (resale)",
     hospitality: ["Palco VIP", "Meet & Greet"],
     fromPriceMXN: 12500,
-    cover: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1600&q=80"
+    cover: "/concerts/mon-laferte-cdmx.jpg"
   },
   {
     slug: "gloria-trevi-cdmx",
@@ -63,7 +63,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Hospitality Lounge", "Boletos Premium"],
     fromPriceMXN: 9200,
-    cover: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600&q=80"
+    cover: "/concerts/gloria-trevi.jpg"
   },
   {
     slug: "grupo-firme-cdmx",
@@ -75,7 +75,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Suite Corporativa", "Boletos Premium"],
     fromPriceMXN: 7800,
-    cover: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1600&q=80"
+    cover: "/concerts/grupo-firme.jpg"
   },
   {
     slug: "el-tri-cdmx",
@@ -87,7 +87,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Hospitality Lounge"],
     fromPriceMXN: 5400,
-    cover: "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=1600&q=80"
+    cover: "/concerts/el-tri.jpg"
   },
   {
     slug: "mijares-sinfonico",
@@ -99,7 +99,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Boletos Premium"],
     fromPriceMXN: 6200,
-    cover: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=1600&q=80"
+    cover: "/concerts/mijares-sinfonico.jpg"
   },
   {
     slug: "rosalia-cdmx",
@@ -111,7 +111,7 @@ export const concerts: Concert[] = [
     status: "Sold out (resale)",
     hospitality: ["Palco VIP", "Meet & Greet", "Hospitality Lounge"],
     fromPriceMXN: 18500,
-    cover: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=80",
+    cover: "/concerts/rosalia.jpg",
     notes: "5 fechas con tour LUX. Hospitality muy limitada — recomendamos reservar con 30+ días."
   },
   {
@@ -124,7 +124,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Hospitality Lounge", "Boletos Premium"],
     fromPriceMXN: 8200,
-    cover: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600&q=80"
+    cover: "/concerts/yuridia.jpg"
   },
   {
     slug: "warped-tour-cdmx",
@@ -136,7 +136,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Hospitality Lounge", "Boletos Premium"],
     fromPriceMXN: 14500,
-    cover: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1600&q=80",
+    cover: "/concerts/warped-tour.jpg",
     notes: "Festival de 2 días con headliners punk/rock. Hospitality incluye barras premium y áreas con sombra."
   },
   {
@@ -149,7 +149,7 @@ export const concerts: Concert[] = [
     status: "Pocas entradas",
     hospitality: ["Palco VIP", "Meet & Greet"],
     fromPriceMXN: 11200,
-    cover: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600&q=80"
+    cover: "/concerts/young-miko.jpg"
   },
   {
     slug: "iron-maiden-cdmx",
@@ -161,7 +161,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Suite Corporativa", "Hospitality Lounge"],
     fromPriceMXN: 10800,
-    cover: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1600&q=80",
+    cover: "/concerts/iron-maiden.jpg",
     notes: "Future Past World Tour. Acceso VIP incluye early entry y catering premium."
   },
   {
@@ -174,7 +174,7 @@ export const concerts: Concert[] = [
     status: "Pocas entradas",
     hospitality: ["Palco VIP", "Meet & Greet", "Hospitality Lounge"],
     fromPriceMXN: 13800,
-    cover: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=80"
+    cover: "/concerts/romeo-santos.jpg"
   },
   {
     slug: "karol-g-cdmx",
@@ -186,7 +186,7 @@ export const concerts: Concert[] = [
     status: "Sold out (resale)",
     hospitality: ["Palco VIP", "Meet & Greet", "Suite Corporativa"],
     fromPriceMXN: 16500,
-    cover: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=80",
+    cover: "/concerts/karol-g.jpg",
     notes: "Tropicoqueta Tour. Las 3 fechas agotadas en preventa — gestionamos hospitality oficial."
   },
   {
@@ -199,7 +199,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Boletos Premium"],
     fromPriceMXN: 7400,
-    cover: "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=1600&q=80"
+    cover: "/concerts/deep-purple-gdl.jpg"
   },
   {
     slug: "deep-purple-cdmx",
@@ -211,7 +211,7 @@ export const concerts: Concert[] = [
     status: "Próximamente",
     hospitality: ["Palco VIP", "Hospitality Lounge"],
     fromPriceMXN: 7400,
-    cover: "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=1600&q=80"
+    cover: "/concerts/deep-purple-cdmx.jpg"
   }
 ];
 

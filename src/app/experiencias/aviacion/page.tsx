@@ -56,15 +56,20 @@ export default function AviacionPage() {
 
               <div className="grid lg:grid-cols-2 gap-6">
                 {items.map(a => (
-                  <article key={a.slug} className="card overflow-hidden">
-                    <div className="relative aspect-[16/9]">
-                      <Image src={a.cover} alt={a.model} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent" />
+                  <article key={a.slug} className="card overflow-hidden group">
+                    <div className="relative aspect-[16/9] overflow-hidden">
+                      <Image src={a.cover} alt={a.model} fill
+                             className="object-cover transition-transform duration-700 group-hover:scale-105"
+                             sizes="(max-width: 1024px) 100vw, 50vw" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-ink/10" />
                       <div className="absolute top-4 left-4">
                         <span className="chip bg-white/95 text-ink"><Plane className="h-3 w-3" /> {a.manufacturer}</span>
                       </div>
                       <div className="absolute bottom-4 left-5 text-white">
-                        <h3 className="font-display text-3xl">{a.model}</h3>
+                        <h3 className="font-display text-3xl lg:text-4xl tracking-tight leading-[0.95]"
+                            style={{ textShadow: "0 2px 18px rgba(0,0,0,0.55)" }}>
+                          {a.model}
+                        </h3>
                       </div>
                     </div>
 
