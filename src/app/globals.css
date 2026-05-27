@@ -17,16 +17,14 @@
   }
   ::selection { background: #F26B3A; color: white; }
 
-  /* Display tier — Fraunces serif, optical-sized */
+  /* Display tier — Instrument Serif: refined modern serif */
   h1, h2, h3, h4 {
-    @apply font-display tracking-tight text-ink-900;
-    font-variation-settings: "opsz" 144, "SOFT" 30;
-    font-feature-settings: "ss01", "ss02";
+    @apply font-display text-ink-900;
+    font-weight: 400;
+    font-feature-settings: "ss01", "liga", "calt";
   }
-  h1 { font-weight: 460; }
-  h2 { font-weight: 460; }
-  h3 { font-weight: 500; }
-  h4 { font-weight: 500; }
+  /* Italic spans inside display get a touch more weight optical */
+  .font-display em, .font-display i { font-style: italic; }
 
   /* Body weight tuning */
   p { @apply text-ink-700; }

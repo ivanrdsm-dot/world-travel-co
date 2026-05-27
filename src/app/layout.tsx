@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Fraunces } from "next/font/google";
+import { Manrope, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
@@ -10,11 +10,12 @@ const manrope = Manrope({
   variable: "--font-manrope",
   display: "swap"
 });
-const fraunces = Fraunces({
+const instrument = Instrument_Serif({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  display: "swap",
-  axes: ["opsz", "SOFT"]
+  variable: "--font-display",
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap"
 });
 
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${manrope.variable} ${fraunces.variable}`}>
+    <html lang="es" className={`${manrope.variable} ${instrument.variable}`}>
       <body>
         <Header />
         <main>{children}</main>

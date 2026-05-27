@@ -41,13 +41,13 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
-        display: ["var(--font-fraunces)", "Georgia", "serif"]
+        display: ["var(--font-display)", "ui-serif", "Georgia", "serif"]
       },
       fontSize: {
-        "display-2xl": ["clamp(3rem, 7.2vw, 6.25rem)",  { lineHeight: "0.96", letterSpacing: "-0.035em" }],
-        "display-xl":  ["clamp(2.5rem, 5.4vw, 4.75rem)", { lineHeight: "1.0",  letterSpacing: "-0.03em"  }],
-        "display-lg":  ["clamp(2rem, 4vw, 3.25rem)",     { lineHeight: "1.05", letterSpacing: "-0.025em" }],
-        "display-md":  ["clamp(1.5rem, 2.6vw, 2.125rem)",{ lineHeight: "1.15", letterSpacing: "-0.018em" }]
+        "display-2xl": ["clamp(3.25rem, 7.6vw, 6.75rem)",{ lineHeight: "1.0",  letterSpacing: "-0.025em" }],
+        "display-xl":  ["clamp(2.5rem, 5.6vw, 5rem)",    { lineHeight: "1.02", letterSpacing: "-0.022em" }],
+        "display-lg":  ["clamp(2rem, 4vw, 3.5rem)",      { lineHeight: "1.08", letterSpacing: "-0.018em" }],
+        "display-md":  ["clamp(1.5rem, 2.6vw, 2.25rem)", { lineHeight: "1.18", letterSpacing: "-0.012em" }]
       },
       borderRadius: {
         xl2: "1.25rem",
