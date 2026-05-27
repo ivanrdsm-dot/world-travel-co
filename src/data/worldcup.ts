@@ -35,7 +35,7 @@ export const venues: WCVenue[] = [
     capacity: 87000,
     matches: ["Partido inaugural 11 jun 2026", "3 partidos fase de grupos", "Octavos de final"],
     notes: "Único estadio del mundo en albergar 3 Copas del Mundo (1970, 1986, 2026). Sede del partido inaugural.",
-    cover: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=1600&q=80"
+    cover: "/venues/azteca.jpg"
   },
   {
     slug: "estadio-akron-guadalajara",
@@ -45,7 +45,7 @@ export const venues: WCVenue[] = [
     capacity: 48071,
     matches: ["3 partidos fase de grupos", "16vos de final"],
     notes: "Casa de las Chivas Rayadas. Diseño icónico de vidrio volcánico.",
-    cover: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1600&q=80"
+    cover: "/venues/akron.jpg"
   },
   {
     slug: "estadio-bbva-monterrey",
@@ -55,7 +55,7 @@ export const venues: WCVenue[] = [
     capacity: 53500,
     matches: ["3 partidos fase de grupos", "16vos de final"],
     notes: "Casa de Rayados. Vista al Cerro de la Silla — uno de los estadios más fotogénicos del mundo.",
-    cover: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1600&q=80"
+    cover: "/venues/bbva.jpg"
   },
 
   // 🇺🇸 ESTADOS UNIDOS
@@ -67,7 +67,7 @@ export const venues: WCVenue[] = [
     capacity: 82500,
     matches: ["3 partidos fase de grupos", "Octavos", "Cuartos", "FINAL 19 jul 2026"],
     notes: "Sede de la GRAN FINAL del Mundial 2026 el 19 de julio.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/metlife.jpg"
   },
   {
     slug: "att-stadium-dallas",
@@ -77,7 +77,7 @@ export const venues: WCVenue[] = [
     capacity: 80000,
     matches: ["4 partidos fase de grupos", "Octavos", "Cuartos", "SEMIFINAL"],
     notes: "Casa de los Dallas Cowboys. Sede de una semifinal — la otra es Atlanta.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/att.jpg"
   },
   {
     slug: "mercedes-benz-stadium-atlanta",
@@ -87,7 +87,7 @@ export const venues: WCVenue[] = [
     capacity: 75000,
     matches: ["3 partidos fase de grupos", "Octavos", "Cuartos", "SEMIFINAL"],
     notes: "Sede de una de las dos semifinales. Techo retráctil oculorítmico único en el mundo.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/mercedes-benz-atl.jpg"
   },
   {
     slug: "sofi-stadium-los-angeles",
@@ -97,7 +97,7 @@ export const venues: WCVenue[] = [
     capacity: 70240,
     matches: ["4 partidos fase de grupos", "Octavos", "Cuartos"],
     notes: "Estadio más nuevo y caro de la NFL. Sede del Super Bowl LVI.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/sofi.jpg"
   },
   {
     slug: "hard-rock-stadium-miami",
@@ -107,7 +107,7 @@ export const venues: WCVenue[] = [
     capacity: 65326,
     matches: ["3 partidos fase de grupos", "Octavos", "TERCER LUGAR 18 jul"],
     notes: "Sede del partido por el tercer lugar el 18 de julio. Casa de los Miami Dolphins.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/hard-rock.jpg"
   },
   {
     slug: "gillette-stadium-boston",
@@ -117,7 +117,7 @@ export const venues: WCVenue[] = [
     capacity: 65878,
     matches: ["4 partidos fase de grupos", "Octavos", "Cuartos"],
     notes: "Casa de los Patriots. Sede de cuartos de final.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/gillette.jpg"
   },
   {
     slug: "lincoln-financial-philadelphia",
@@ -127,7 +127,7 @@ export const venues: WCVenue[] = [
     capacity: 67594,
     matches: ["3 partidos fase de grupos", "Octavos"],
     notes: "Casa de los Eagles. Centro histórico de USA, sede emblemática.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/lincoln.jpg"
   },
   {
     slug: "nrg-stadium-houston",
@@ -137,7 +137,7 @@ export const venues: WCVenue[] = [
     capacity: 72220,
     matches: ["4 partidos fase de grupos", "Octavos"],
     notes: "Casa de los Texans. Techo retráctil y ambiente vibrante para fan zones.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/nrg.jpg"
   },
   {
     slug: "arrowhead-kansas-city",
@@ -147,7 +147,7 @@ export const venues: WCVenue[] = [
     capacity: 76416,
     matches: ["4 partidos fase de grupos", "Octavos"],
     notes: "El estadio más ruidoso del mundo (récord Guinness). Ambiente único.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/arrowhead.jpg"
   },
   {
     slug: "levis-stadium-bay-area",
@@ -157,7 +157,7 @@ export const venues: WCVenue[] = [
     capacity: 68500,
     matches: ["5 partidos fase de grupos", "Octavos"],
     notes: "Casa de los 49ers. Más alto número de partidos de fase de grupos.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/levis.jpg"
   },
   {
     slug: "lumen-field-seattle",
@@ -167,7 +167,7 @@ export const venues: WCVenue[] = [
     capacity: 68740,
     matches: ["4 partidos fase de grupos", "Octavos"],
     notes: "Casa de Sounders FC. Ambiente futbolero más fuerte de Estados Unidos.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/lumen.jpg"
   },
 
   // 🇨🇦 CANADÁ
@@ -179,7 +179,7 @@ export const venues: WCVenue[] = [
     capacity: 45500,
     matches: ["5 partidos fase de grupos", "Octavos"],
     notes: "Casa de Toronto FC. Ampliado a 45,500 plazas para el Mundial.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/bmo.jpg"
   },
   {
     slug: "bc-place-vancouver",
@@ -189,7 +189,7 @@ export const venues: WCVenue[] = [
     capacity: 54500,
     matches: ["5 partidos fase de grupos", "16vos"],
     notes: "Casa de los Whitecaps. Único techo retráctil de su tipo en Canadá.",
-    cover: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1600&q=80"
+    cover: "/venues/bc-place.jpg"
   }
 ];
 

@@ -109,29 +109,51 @@ export default function MundialPage() {
                   <span className="text-ink-400 text-sm">{items.length} sede{items.length === 1 ? "" : "s"}</span>
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {items.map(v => (
-                    <article key={v.slug} className="card overflow-hidden">
-                      <div className="relative aspect-[16/10]">
-                        <Image src={v.cover} alt={v.stadium} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 to-transparent" />
-                        <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                          <p className="text-[11px] uppercase tracking-widest opacity-80 flex items-center gap-1.5"><MapPin className="h-3 w-3" /> {v.city}</p>
-                          <h4 className="font-display text-2xl mt-0.5">{v.stadium}</h4>
+                  {items.map(v => {
+                    const isFinal     = v.matches.some(m => m.toUpperCase().includes("FINAL 19"));
+                    const isInaugural = v.matches.some(m => m.toLowerCase().includes("inaugural"));
+                    const isSemi      = v.matches.some(m => m.toUpperCase().includes("SEMIFINAL"));
+                    const badge = isFinal ? "FINAL" : isInaugural ? "INAUGURAL" : isSemi ? "SEMIFINAL" : null;
+                    return (
+                      <article key={v.slug} className="card overflow-hidden group">
+                        <div className="relative aspect-[16/11] overflow-hidden">
+                          <Image src={v.cover} alt={v.stadium} fill
+                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                 sizes="(max-width: 768px) 100vw, 33vw" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/55 to-ink/15" />
+                          {badge && (
+                            <span className="absolute top-3 right-3 chip bg-sun text-white text-[10px]">
+                              ⭐ {badge}
+                            </span>
+                          )}
+                          <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+                            <p className="text-[10px] uppercase tracking-[0.22em] font-semibold opacity-90 flex items-center gap-1.5">
+                              <MapPin className="h-3 w-3" /> {v.city}
+                            </p>
+                            <h4 className="font-display text-2xl lg:text-3xl mt-1 leading-[1.05] tracking-tight"
+                                style={{ textShadow: "0 2px 18px rgba(0,0,0,0.55)" }}>
+                              {v.stadium}
+                            </h4>
+                          </div>
                         </div>
-                      </div>
-                      <div className="p-5">
-                        <div className="flex items-center gap-3 text-sm text-ink-500">
-                          <span className="inline-flex items-center gap-1.5"><Users className="h-3.5 w-3.5" /> {v.capacity.toLocaleString()}</span>
+                        <div className="p-5">
+                          <div className="flex items-center gap-3 text-sm text-ink-500">
+                            <span className="inline-flex items-center gap-1.5">
+                              <Users className="h-3.5 w-3.5" /> {v.capacity.toLocaleString()} plazas
+                            </span>
+                          </div>
+                          <ul className="mt-4 space-y-1.5 text-sm">
+                            {v.matches.map(m => (
+                              <li key={m} className="flex gap-2 text-ink-700">
+                                <Calendar className="h-3.5 w-3.5 mt-0.5 text-sun shrink-0" /> {m}
+                              </li>
+                            ))}
+                          </ul>
+                          <p className="text-xs text-ink-500 mt-4 italic leading-relaxed">{v.notes}</p>
                         </div>
-                        <ul className="mt-4 space-y-1.5 text-sm">
-                          {v.matches.map(m => (
-                            <li key={m} className="flex gap-2 text-ink-700"><Calendar className="h-3.5 w-3.5 mt-0.5 text-sun shrink-0" /> {m}</li>
-                          ))}
-                        </ul>
-                        <p className="text-xs text-ink-500 mt-4 italic leading-relaxed">{v.notes}</p>
-                      </div>
-                    </article>
-                  ))}
+                      </article>
+                    );
+                  })}
                 </div>
               </div>
             );
