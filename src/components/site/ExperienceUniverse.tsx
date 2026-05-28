@@ -3,13 +3,13 @@ import Image from "next/image";
 import { ArrowUpRight, Hotel, Plane, Car, Music, Trophy, Ship, Sparkles } from "lucide-react";
 
 const tiles = [
-  { href: "/experiencias/mundial-2026", icon: Trophy,   label: "Mundial 2026",   tag: "Hospitality oficial",   img: "/universe/mundial.jpg",    span: "lg:col-span-2 lg:row-span-2" },
-  { href: "/experiencias/hoteles",      icon: Hotel,    label: "Hoteles 5★",      tag: "Alianza Posadas",       img: "/universe/hoteles.jpg",    span: "" },
-  { href: "/experiencias/aviacion",     icon: Plane,    label: "Jets privados",   tag: "Cessna · Gulfstream",   img: "/universe/jets.jpg",       span: "" },
-  { href: "/experiencias/transporte",   icon: Car,      label: "Transporte VIP",  tag: "Maybach · Cullinan",    img: "/universe/transporte.jpg", span: "" },
-  { href: "/experiencias/conciertos",   icon: Music,    label: "Conciertos",      tag: "Palcos & Hospitality",  img: "/universe/conciertos.jpg", span: "" },
-  { href: "/experiencias/cruceros",     icon: Ship,     label: "Cruceros",        tag: "15 navieras",           img: "/universe/cruceros.jpg",   span: "" },
-  { href: "/arma-tu-viaje",             icon: Sparkles, label: "Arma tu viaje",   tag: "Concierge 360°",        img: "/universe/concierge.jpg",  span: "" }
+  { href: "/experiencias/mundial-2026", icon: Trophy,   label: "Mundial 2026",        tag: "Entradas a los mejores partidos y palcos", img: "/universe/mundial.jpg",    span: "lg:col-span-2 lg:row-span-2" },
+  { href: "/experiencias/hoteles",      icon: Hotel,    label: "Hoteles 5★",           tag: "Hoteles de lujo",                          img: "/universe/hoteles.jpg",    span: "" },
+  { href: "/experiencias/aviacion",     icon: Plane,    label: "Jets privados",        tag: "Jets privados",                            img: "/universe/jets.jpg",       span: "" },
+  { href: "/experiencias/transporte",   icon: Car,      label: "Transporte VIP",       tag: "Sedanes de lujo",                          img: "/universe/transporte.jpg", span: "" },
+  { href: "/experiencias/conciertos",   icon: Music,    label: "Conciertos",           tag: "Boletos de conciertos",                    img: "/universe/conciertos.jpg", span: "" },
+  { href: "/experiencias/cruceros",     icon: Ship,     label: "Cruceros",             tag: "15 navieras",                              img: "/universe/cruceros.jpg",   span: "" },
+  { href: "/experiencias/aviacion#flota",icon: Sparkles,label: "Helicópteros privados",tag: "Bell · Airbus H145",                       img: "/aircraft/bell-407.jpg",   span: "" }
 ];
 
 export default function ExperienceUniverse() {
@@ -23,8 +23,8 @@ export default function ExperienceUniverse() {
             <em className="text-sun">Todas las piezas de tu viaje.</em>
           </h2>
         </div>
-        <Link href="/experiencias" className="link-underline text-ink-700">
-          Ver todas las experiencias →
+        <Link href="/arma-tu-viaje" className="link-underline text-ink-700">
+          Arma tu viaje a la medida →
         </Link>
       </div>
 
@@ -33,7 +33,7 @@ export default function ExperienceUniverse() {
           const big = t.span.includes("col-span-2");
           return (
             <Link
-              key={t.href}
+              key={t.href + t.label}
               href={t.href}
               className={`group relative rounded-[2rem] overflow-hidden block isolate
                           min-h-[240px] lg:min-h-[280px] ${t.span}`}

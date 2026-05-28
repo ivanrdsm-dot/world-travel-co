@@ -29,9 +29,9 @@ export default function MundialPage() {
             <span className="chip bg-white/15 backdrop-blur text-white border border-white/20">11 jun – 19 jul 2026</span>
           </div>
 
-          <h1 className="mt-6 font-display text-display-2xl leading-[0.95] max-w-5xl">
+          <h1 className="mt-6 font-display text-display-xl lg:text-display-2xl leading-[1.05] tracking-tight max-w-5xl">
             FIFA World Cup 26™.<br/>
-            <span className="italic text-sun-300">Estarás del lado correcto del campo.</span>
+            <em className="text-sun-300">Estarás del lado correcto del campo.</em>
           </h1>
           <p className="mt-8 text-xl text-white/85 max-w-3xl leading-relaxed">
             16 sedes, 48 selecciones, 104 partidos. WTC opera hospitality

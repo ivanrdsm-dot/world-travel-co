@@ -34,12 +34,12 @@ export default function Testimonials() {
         <div className="grid lg:grid-cols-[1fr_1.6fr] gap-12 items-end">
           <div>
             <p className="eyebrow text-sun-300 before:bg-sun-300">Lo que dicen</p>
-            <h2 className="mt-6 font-display text-display-lg">
+            <h2 className="mt-6 font-display text-display-lg text-white">
               No vendemos viajes.<br/>
-              <span className="italic text-sun-300">Vendemos regresos felices.</span>
+              <em className="text-sun-300">Vendemos regresos felices.</em>
             </h2>
           </div>
-          <p className="text-lg opacity-80 leading-relaxed">
+          <p className="text-lg text-white/90 leading-relaxed">
             Cada testimonio es de un viajero que regresó, nos escribió y nos
             mandó fotos. Algunos volvieron 3 veces. Ese es el negocio: gente
             que confía y trae a sus amigos.
